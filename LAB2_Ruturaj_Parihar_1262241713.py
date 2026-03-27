@@ -52,7 +52,7 @@ def a_star(start, goal):
         for neighbor in get_neighbors(current):
             if neighbor in visited:
                 continue
-
+                
             new_g = g_cost[current] + 1
 
             if neighbor not in g_cost or new_g < g_cost[neighbor]:
